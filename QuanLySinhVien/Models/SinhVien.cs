@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace QuanLySinhVien.Models
+{
+    public class SinhVien
+    {
+        public int Id { get; set; }
+        public string MaSV { get; set; } = "";
+        public string HoTen { get; set; } = "";
+        public DateTime NgaySinh { get; set; }
+        public string GioiTinh { get; set; } = "Nam";
+        public double? DiemTB { get; set; }
+
+        public int KhoaId { get; set; }
+        public Khoa? Khoa { get; set; }
+    }
+}
